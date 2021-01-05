@@ -1,7 +1,7 @@
 
 const express = require('express');
-const port = process.env.PORT || 3000;
-const ProductData = require('./src/model/Productdata');
+
+const ProductData = require('./src/model/productdata');
 const AuthorData = require('./src/model/authordata');
 
 // const User = require('./src/model/user');
@@ -166,6 +166,6 @@ app.delete('/remove/:id',(req,res)=>{
   })
      
 //author       
-
+const port = process.env.PORT || 3000;
 
 app.listen(port,()=>{console.log("Server ready at" + port)});

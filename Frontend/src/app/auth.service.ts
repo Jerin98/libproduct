@@ -6,7 +6,7 @@ import { Router } from '@angular/router'
 export class AuthService {
 
   
-  private _loginUrl = "http://localhost:4000/login";
+  private _loginUrl = "https://libbackend.herokuapp.com/login";
   
   constructor(private http: HttpClient) { }
 
